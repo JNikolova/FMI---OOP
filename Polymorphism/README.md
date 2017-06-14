@@ -2,4 +2,4 @@
 
 ## Simple example with shapes. 
 
-Show how to copy a polymorphic object.
+Shows how to copy a polymorphic object.
