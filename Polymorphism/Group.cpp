@@ -24,14 +24,13 @@ Group::~Group()
 	clean();
 }
 
-void Group::add_shape(const Shape& shape)
+void Group::add_shape(const Shape* shape)
 {
 	if(m_size == m_capacity)
 	{
 		resize(m_capacity ? m_capacity*2 : 2);
 	}
-	const Shape* real_shape = &shape; 
-	shapes[m_size++] =real_shape->clone();
+	shapes[m_size++] = shape->clone();
 }
 
 void Group::print() const
