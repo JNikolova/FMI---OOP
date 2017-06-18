@@ -12,7 +12,7 @@ public:
 	~Group();
 
 public:
-	void add_shape(const Shape&);
+	void add_shape(const Shape*);
 	void print() const;
 
 private:
